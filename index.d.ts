@@ -9,6 +9,7 @@ type ListenerFn = (...args: Array<any>) => void;
 export class EventEmitter {
   static prefixed: string | boolean;
   static insertEventName: boolean;
+  static useDataObject: boolean;
 
   /**
    * Return an array listing the events for which the emitter has registered
